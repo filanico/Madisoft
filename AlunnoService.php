@@ -24,7 +24,7 @@ class Alunno
         $this->codiceFiscale = $_codfisc;
     }
 
-    public function getCodiceFiscale()
+    public function getCodiceFiscale(): string
     {
         return $this->codiceFiscale;
     }
@@ -43,7 +43,7 @@ class Classe
         $this->alunni[$alunno->getCodiceFiscale()] = $alunno;
     }
 
-    public function getAlunni()
+    public function getAlunni():array
     {
         /*
          Controllo che 'alunni' non sia NULL
