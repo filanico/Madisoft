@@ -28,6 +28,8 @@ class Client
     {
         $balance = $account->getBalance();
         if ($balance >= $amount) {
+            // Qui è possibile utilizzare il metodo appena dichiarato
+            // anzichè clonare codice simile alle righe 23,24
             $account->deposit($amount * -1);
             // $newBalance = $balance - $amount;
             // $account->setBalance($balance);
