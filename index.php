@@ -2,18 +2,18 @@
 
  require('alunnoservice.php');
 
- $c = new Classe();
- $as = new AlunnoService();
+ $classe = new Classe();
+ $alunnoservice = new AlunnoService();
 
 
 
  // 1. Classe vuota -> aggiungo alunno
- $a = new Alunno("FLNNLN83B19A669E");
- $as->aggiungiAlunno($a,$c);
+ $alunno = new Alunno("FLNNLN83B19A669E");
+ $alunnoservice->aggiungiAlunno($alunno,$classe);
  // $as->aggiungiAlunno($a,$c);
- var_dump($c);
+ var_dump($classe);
 
- if(false){
+ if(true){
 	 // 2. Classe popolata -> aggiungo alunno
 	 $alunni = [
 	 	new Alunno("FLNNLN83B19A669E"),
@@ -25,7 +25,7 @@
 	 // Popoliamo la classe
 	 foreach($alunni as $alunno)
 	 	$classe->aggiungiAlunno($alunno);
-	 $as->aggiungiAlunno($a,$c);
+	 $alunnoservice->aggiungiAlunno($alunno,$classe);
  }
 
  ?>
