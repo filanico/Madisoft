@@ -43,11 +43,9 @@
 
 	class Service{		
 		const REVOKE_VOTE_WITHIN_DAYS=2;
-
 		private static $instance = NULL; 
-
 		private $voti=NULL;
-
+		
 		public static function Get(){
 			if( self::$instance == NULL)
 				self::$instance = new Service();
