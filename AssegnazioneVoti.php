@@ -22,6 +22,11 @@
 		{
 			$this->punteggio = $punteggio;
 			$this->dataValutazione = new DateTime();
+			/**
+				Per ragioni di test imposto la data del voto a 2 giorni fase, 
+				anche se questo sarà un valore dipendente dalla tupla nella tabella 
+				DB
+			*/			
 			$di = new DateInterval("P2D");
 			$di->invert = 1;
 			$this->dataValutazione = $this->dataValutazione->add($di);
