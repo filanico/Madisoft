@@ -84,7 +84,7 @@
 						echo "Eliminato voto {$voto->GetPunteggio()} 
 						del {$sDate} 
 						assegnato ad alunno {$idAlunno}<br>";
-						unset($this->registro[$idAlunno]);
+						unset($this->voti[$idAlunno]);
 						$this->SendMail('tpl_mail_vote_revoked',[
 							'subj' => "Voto eliminato",
 							'idAlunno' => $idAlunno,
