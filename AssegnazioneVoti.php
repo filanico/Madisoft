@@ -23,7 +23,7 @@
 			$this->punteggio = $punteggio;
 			$this->dataValutazione = new DateTime();
 			/**
-				Per ragioni di test imposto la data del voto a 2 giorni fase, 
+				Per ragioni di test imposto la data del voto a 2 giorni fa, 
 				anche se questo sarà un valore dipendente dalla tupla nella tabella 
 				DB
 			*/			
